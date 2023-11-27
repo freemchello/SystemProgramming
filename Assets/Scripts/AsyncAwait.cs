@@ -22,9 +22,9 @@ public class AsyncAwait : MonoBehaviour
 
         var taskResult = await WhatTaskFaster(cts, task1, task2);
         if (taskResult)
-            Debug.Log($"Task 1 is faster [WaitSecondAndPrint]");
+            Debug.Log($"Task 1 is faster [WaitSecondAndPrint], Result: {taskResult}");
         else
-            Debug.Log($"Task 2 is faster [Wait60Frames]");
+            Debug.Log($"Task 2 is faster [Wait60Frames], Result: {taskResult}");
         
     }
 
